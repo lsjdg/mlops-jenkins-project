@@ -7,7 +7,7 @@ pipeline {
 		stage("build") {
 			steps {
 				echo 'building the applicaiton...'
-				echo "building version ${env.GIT_BRANCH }"
+				echo "building version ${env.NEW_VERSION}"
 			}
 		}
 		stage("test") {
